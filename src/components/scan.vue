@@ -12,10 +12,17 @@
           />
         </b-col>
         <b-col cols="auto">
-          <h1>ORDER SCANS</h1>
-          <h3>Schedule a visit</h3>
-          <h3>And have your home scanned</h3>
-          <button>Schedule a scan</button>
+          <h1 style="margin-top:7vh">ORDER SCANS</h1>
+          <h4 style="margin-bottom:-0.3vh">Schedule a visit</h4>
+          <h4>And have your home scanned</h4>
+          <button
+            type="button"
+            class="btn btn-primary"
+            href="#"
+            style="margin-bottom:5vh"
+          >
+            Schedule a scan
+          </button>
         </b-col>
       </b-row>
     </b-container>

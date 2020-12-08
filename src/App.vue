@@ -3,7 +3,7 @@
 <template>
   <div id="app">
     <Navbar />
-    <!-- <Homepage /> -->
+    <Homepage />
     <ScanForm />
     <BottomNavbar />
   </div>
@@ -14,9 +14,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import Vue from 'vue';
 import { BootstrapVue } from 'bootstrap-vue';
-// import Homepage from './components/homepage.vue'
+import Homepage from './components/homepage.vue';
 import Navbar from './components/navbar.vue';
-import ScanForm from './components/scan_form.vue';
+// import ScanForm from './components/scan_form.vue';
 import BottomNavbar from './components/bottom_navbar.vue';
 // import $ from 'jquery';
 // import { library } from '@fortawesome/fontawesome-svg-core'
@@ -26,13 +26,17 @@ import BottomNavbar from './components/bottom_navbar.vue';
 // library.add(faUserSecret)
 // Vue.component('font-awesome-icon', FontAwesomeIcon)
 // Vue.config.productionTip = false
+// import Vue from 'vue';
+import VueRouter from 'vue-router';
+
+Vue.use(VueRouter);
 Vue.use(BootstrapVue);
 export default {
   name: 'app',
   components: {
-    // Homepage,
+    Homepage,
     Navbar,
-    ScanForm,
+    // ScanForm,
     BottomNavbar,
   },
 };

@@ -2,11 +2,11 @@
 
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar toggleable="lg" type="light" variant="light">
       <img
         src="../assets/logo.png"
         href="/"
-        class="d-inline-block align-top"
+        class="d-inline-block align-top logo"
         alt="scan2plan logo"
       />
 
@@ -15,9 +15,19 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-item>FIND AN ARCHITECT</b-nav-item>
-          <b-nav-item>ORDER A SCAN</b-nav-item>
-          <b-nav-item>Download the app</b-nav-item>
+          <b-nav-item
+            ><a href="#" class="blue-text nav-link"
+              >FIND AN ARCHITECT</a
+            ></b-nav-item
+          >
+          <b-nav-item
+            ><a href="#" class="blue-text nav-link">ORDER A SCAN</a></b-nav-item
+          >
+          <b-nav-item
+            ><button type="button" class="btn btn-primary" href="#">
+              Download the app
+            </button></b-nav-item
+          >
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -30,3 +40,20 @@ export default {
   components: {},
 };
 </script>
+<style scoped>
+/* .navbar {
+  background-color: white;
+} */
+.blue-text {
+  color: #007bfe !important;
+}
+.white-button {
+  color: white;
+  background-color: blue;
+  border-radius: 50px;
+}
+.logo {
+  width: 13vh;
+  height: 5vw;
+}
+</style>

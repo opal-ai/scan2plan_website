@@ -2,7 +2,7 @@
 
 <template>
   <div class="homepage">
-    <b-container>
+    <b-container fluid>
       <b-row align-h="center">
         <Introduction />
       </b-row>

@@ -2,11 +2,12 @@
 
 <template>
   <div id="bottom_navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <a class="navbar-brand" href="#">
-        <h3>SCAN2PLAN</h3>
+        <h4 style="margin:-0.2vh">SCAN2PLAN</h4>
         <p>@OPAL AI Inc 2020</p>
       </a>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -22,22 +23,23 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <i class="fas fa-search-location"></i>
-            <!-- <i class='fas fa-map-pin'></i> -->
-            <!-- <font-awesome-icon icon="user-secret" /> -->
-            <p>516 N Virgil Avenue</p>
-            <p>Los Angeles</p>
-            <p>California 90004</p>
+            <i class="fas fa-search-location"
+              ><p>516 N Virgil Avenue</p>
+              <p>Los Angeles</p>
+              <p>California 90004</p>
+            </i>
           </li>
           <b-container>
             <li class="nav-item">
               <b-row>
-                <i class="fas fa-envelope-square"></i>
-                <a class="nav-link" href="#">info@opaltech.ai</a>
+                <i class="fas fa-envelope-square"
+                  ><a class="nav-link" href="#">info@opaltech.ai</a></i
+                >
               </b-row>
               <b-row>
-                <i class="fas fa-phone"></i>
-                <a class="nav-link disabled" href="#">(323) 928-2029</a>
+                <i class="fas fa-phone"
+                  ><a class="nav-link disabled" href="#">(323) 928-2029</a></i
+                >
               </b-row>
             </li>
           </b-container>
@@ -71,4 +73,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#bottom_navbar {
+  color: black !important;
+}
+</style>
