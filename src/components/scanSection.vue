@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: 'Scan',
+  name: 'ScanSection',
   components: {},
 };
 </script>

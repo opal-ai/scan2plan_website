@@ -8,13 +8,13 @@
       </b-row>
       <div id="grad">
         <b-row align-h="center">
-          <Floorplan />
+          <FloorplanSection />
         </b-row>
         <b-row align-h="center">
-          <Architect />
+          <ArchitectSection @showArchitechtInterface="updateVarForArchitecht"/>
         </b-row>
         <b-row align-h="center">
-          <Scan />
+          <ScanSection />
         </b-row>
       </div>
     </b-container>
@@ -23,14 +23,25 @@
 
 <script>
 import Introduction from './introduction.vue';
-import Floorplan from './floorplan.vue';
-import Architect from './architect.vue';
-import Scan from './scan.vue';
+import FloorplanSection from './floorplanSection';
+import ArchitectSection from './architectSection.vue';
+import ScanSection from './scanSection.vue';
 
 export default {
-  components: { Introduction, Floorplan, Architect, Scan },
+  components: { Introduction, FloorplanSection, ArchitectSection, ScanSection },
   name: 'Homepage',
+  data: function() {
+    return {
+      showArchitectInterface: false
+    }
+  },
   props: {},
+  methods: {
+    updateVarForArchitecht : function(){
+      this.showArchitectInterface = true;
+      console.log("data passed to homepage")
+    }
+  }
 };
 </script>
 
