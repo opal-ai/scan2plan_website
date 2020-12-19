@@ -5,7 +5,7 @@
     <b-container>
       <b-row>
         <b-col>
-          <img src="../../src/assets/devices.png" width="300vw" height="90%" />
+          <img src="../../assets/devices.png" width="300vw" height="90%" />
         </b-col>
         <b-col cols="auto">
           <h3 style="margin-top:7vh">GET A FLOORPLAN</h3>
@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: 'Floorplan',
+  name: 'FloorplanSection',
   components: {},
 };
 </script>

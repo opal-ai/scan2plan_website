@@ -18,7 +18,7 @@
           </p>
         </b-col>
         <b-col cols="7">
-          <img src="../../src/assets/phone.png" width="300vw" height="100%" />
+          <img src="../../assets/phone.png" width="300vw" height="100%" />
         </b-col>
       </b-row>
     </b-container>
@@ -47,7 +47,7 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url('../../src/assets/alimo.png');
+  background-image: url('../../assets/alimo.png');
   background-repeat: no-repeat;
   /* background-size: 40vw 80vh; */
   height: 100%;

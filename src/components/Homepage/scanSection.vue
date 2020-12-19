@@ -6,7 +6,7 @@
       <b-row>
         <b-col>
           <img
-            src="../../src/assets/3d_model.png"
+            src="../../assets/3d_model.png"
             width="300vw"
             height="200vw"
           />
@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: 'Scan',
+  name: 'ScanSection',
   components: {},
 };
 </script>

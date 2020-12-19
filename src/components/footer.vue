@@ -68,7 +68,7 @@
 
 <script>
 export default {
-  name: 'BottomNavbar',
+  name: 'Footer',
   components: {},
 };
 </script>
