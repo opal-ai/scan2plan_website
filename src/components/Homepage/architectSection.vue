@@ -1,4 +1,9 @@
 <!-- @format -->
+<!--Version History--->
+<!--
+V1.0    Robert    12/12/2020    Initial Version
+V1.1    Aditi     12/19/2020    Added Modal for login on button click
+--->
 
 <template>
   <div id="architect">
@@ -16,11 +21,13 @@
           >
             Architect Connect
           </button>
+          <!--V1.1 changes start-->
               <b-modal id="loginSignupModal">
                 <button class="modalButton" v-on:click="showArchitectLogin">Login as Architect</button>
                 <button class="modalButton">Login as Customer</button>
                 <button class="modalButton">Sign Up</button>
               </b-modal>
+          <!--V1.1 changes start-->
         </b-col>
         <b-col>
           <img src="../../assets/girl.png" width="300vw" height="200vw" />
@@ -37,14 +44,14 @@ export default {
   components: {},
   data: function() {
     return {
-      showModal: false,
-      showArchitecht: false
+      showArchitecht: ""
     }
   },
+  //V1.1
   methods: {
     showArchitectLogin : function(){
-      this.showArchitecht = true;
-      this.$emit("showArchitechtInterface", this.showArchitecht)
+      this.showArchitecht = "architect";
+      this.$emit("showInterface", this.showArchitecht)
     }
   }
 };

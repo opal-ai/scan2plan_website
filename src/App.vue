@@ -1,4 +1,9 @@
 <!-- @format -->
+<!--Version History--->
+<!--
+V1.0    Robert    12/12/2020    Initial Version
+V1.1    Aditi     12/19/2020    Adding Connect Architect functionality
+--->
 
 <template>
   <div id="app">
@@ -17,7 +22,7 @@ import { BootstrapVue } from 'bootstrap-vue';
 import Homepage from './components/Homepage/homepage';
 import Navbar from './components/navbar.vue';
 import Footer from './components/footer.vue';
-import ArchitechtInterface from './components/Architect/architectInterface'
+import ArchitechtInterface from './components/Architect/architectInterface' //V1.1
 
 Vue.use(BootstrapVue);
 

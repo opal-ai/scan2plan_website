@@ -1,4 +1,8 @@
 <!-- @format -->
+<!--Version History--->
+<!--
+V1.0    Robert    12/12/2020    Initial Version
+--->
 
 <template>
   <div id="scan">

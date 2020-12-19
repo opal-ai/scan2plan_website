@@ -1,4 +1,9 @@
 <!-- @format -->
+<!--Version History--->
+<!--
+V1.0    Robert    12/12/2020    Initial Version
+V1.1    Aditi     12/19/2020    Toggle interface based on selection
+--->
 
 <template>
   <div class="homepage">
@@ -11,7 +16,7 @@
           <FloorplanSection />
         </b-row>
         <b-row align-h="center">
-          <ArchitectSection @showArchitechtInterface="updateVarForArchitecht"/>
+          <ArchitectSection @showInterface="updateInterface"/> <!--V1.1 change-->
         </b-row>
         <b-row align-h="center">
           <ScanSection />
@@ -32,14 +37,15 @@ export default {
   name: 'Homepage',
   data: function() {
     return {
-      showArchitectInterface: false
+      showInterface: ""
     }
   },
   props: {},
+  //V1.1
   methods: {
-    updateVarForArchitecht : function(){
-      this.showArchitectInterface = true;
-      console.log("data passed to homepage")
+    updateInterface : function(value){
+      this.showArchitectInterface = value;
+
     }
   }
 };
