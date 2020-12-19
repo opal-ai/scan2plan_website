@@ -13,7 +13,7 @@
             href="#"
             style="margin-bottom:5vh"
           >
-            Book an architect
+            Architect Connect
           </button>
         </b-col>
         <b-col>
