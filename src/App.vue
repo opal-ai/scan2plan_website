@@ -14,23 +14,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import Vue from 'vue';
 import { BootstrapVue } from 'bootstrap-vue';
-import Homepage from './components/homepage.vue';
+import Homepage from './components/Homepage/homepage';
 import Navbar from './components/navbar.vue';
 import Footer from './components/footer.vue';
-import ArchitechtInterface from './components/architectInterface'
-// import $ from 'jquery';
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import ArchitechtInterface from './components/Architect/architectInterface'
 
-// library.add(faUserSecret)
-// Vue.component('font-awesome-icon', FontAwesomeIcon)
-// Vue.config.productionTip = false
-// import Vue from 'vue';
-//import VueRouter from 'vue-router';
-
-//Vue.use(VueRouter);
 Vue.use(BootstrapVue);
+
 export default {
   name: 'app',
   data: function(){

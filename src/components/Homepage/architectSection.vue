@@ -13,18 +13,17 @@
             href="#"
             style="margin-bottom:5vh"
             v-b-modal.loginSignupModal
-            v-on:click="clickedButton"
           >
             Architect Connect
           </button>
-              <b-modal id="loginSignupModal" v-if="showModal">
+              <b-modal id="loginSignupModal">
                 <button class="modalButton" v-on:click="showArchitectLogin">Login as Architect</button>
                 <button class="modalButton">Login as Customer</button>
                 <button class="modalButton">Sign Up</button>
               </b-modal>
         </b-col>
         <b-col>
-          <img src="../../src/assets/girl.png" width="300vw" height="200vw" />
+          <img src="../../assets/girl.png" width="300vw" height="200vw" />
         </b-col>
       </b-row>
     </b-container>
@@ -43,12 +42,6 @@ export default {
     }
   },
   methods: {
-    clickedButton : function (){
-      console.log(this.showModal)
-      console.log("clicked")
-      this.showModal = true;
-      console.log(this.showModal)
-    },
     showArchitectLogin : function(){
       this.showArchitecht = true;
       this.$emit("showArchitechtInterface", this.showArchitecht)
