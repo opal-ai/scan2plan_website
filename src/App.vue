@@ -8,9 +8,13 @@ V1.1    Aditi     12/19/2020    Adding Connect Architect functionality
 <template>
   <div id="app">
     <Navbar />
-    <Homepage />
+    <!--V1.1 changes start -->
+    <div id="mainContent">
+      <Homepage @showInterface="updatePage" v-if="showPage === 'homepage'"/>
+      <FindArchitect v-if="showPage === 'architect'"/>
+    </div>
+    <!--V1.1 changes end -->
     <Footer />
-    <ArchitechtInterface v-if="showArchitect"/>
   </div>
 </template>
 
@@ -22,7 +26,7 @@ import { BootstrapVue } from 'bootstrap-vue';
 import Homepage from './components/Homepage/homepage';
 import Navbar from './components/navbar.vue';
 import Footer from './components/footer.vue';
-import ArchitechtInterface from './components/Architect/architectInterface' //V1.1
+import FindArchitect from './components/Architect/findArchitect' //V1.1
 
 Vue.use(BootstrapVue);
 
@@ -30,15 +34,21 @@ export default {
   name: 'app',
   data: function(){
     return {
-      showArchitect: false
+      showPage: "homepage"
     }
   },
   components: {
     Homepage,
     Navbar,
     Footer,
-    ArchitechtInterface
+    FindArchitect
   },
+  //Added for V1.1
+  methods : {
+    updatePage : function(value) {
+      this.showPage = value
+    }
+  }
 };
 </script>
 <style>
@@ -49,4 +59,5 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
 </style>

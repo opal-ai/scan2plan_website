@@ -44,8 +44,8 @@ export default {
   //V1.1
   methods: {
     updateInterface : function(value){
-      this.showArchitectInterface = value;
-
+      this.showInterface = value;
+      this.$emit("showInterface", this.showInterface)
     }
   }
 };

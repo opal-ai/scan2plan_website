@@ -23,9 +23,8 @@ V1.1    Aditi     12/19/2020    Added Modal for login on button click
           </button>
           <!--V1.1 changes start-->
               <b-modal id="loginSignupModal">
-                <button class="modalButton" v-on:click="showArchitectLogin">Login as Architect</button>
-                <button class="modalButton">Login as Customer</button>
-                <button class="modalButton">Sign Up</button>
+                <button class="modalButton" v-on:click="showArchitectLogin">Find an Architect</button>
+                <button class="modalButton">Find a project</button>
               </b-modal>
           <!--V1.1 changes start-->
         </b-col>
