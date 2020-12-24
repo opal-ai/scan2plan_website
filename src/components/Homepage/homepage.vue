@@ -12,13 +12,13 @@ V1.1    Aditi     12/19/2020    Toggle interface based on selection
         <Introduction />
       </b-row>
       <div id="grad">
-        <b-row align-h="center">
+        <b-row align-h="center" style="min-height:40vh">
           <FloorplanSection />
         </b-row>
-        <b-row align-h="center">
+        <b-row align-h="center" style="min-height:40vh">
           <ArchitectSection @showInterface="updateInterface"/> <!--V1.1 change-->
         </b-row>
-        <b-row align-h="center">
+        <b-row align-h="center" style="min-height:40vh">
           <ScanSection />
         </b-row>
       </div>
