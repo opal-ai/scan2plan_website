@@ -7,27 +7,7 @@ V1.0    Robert    12/12/2020    Initial Version
 <template>
   <div class="introduction">
     <div class="bg"></div>
-    <b-row align-v="center">
-        <!-- <b-col cols="8">
-          <b-row>
-            <b-col cols="6">
-              <h1 class="intro_title" style="margin-top: 10vh">OPLAN</h1>
-              </b-col>
-            <b-col cols="6">
-              <div id="taglines">
-                <p class="intro_p">Need an instant 3D Model of your home?</p>
-                <p class="intro_p">Need a floorplan, without the hassle?</p>
-                <p class="intro_p">Need an architect?</p>
-                <h4 style="color:black; font-size: 2em; ">Our app has it all covered!</h4>
-                <p style="text-decoration: underline; margin-bottom: 10vh; color: #007bfe">Learn More</p>
-              </div>
-            </b-col>
-          </b-row>
-        </b-col>
-        <b-col cols="4" style="padding:0px" id="imageDiv">
-          <img src="../../assets/phone.png" style="width:30vw; float:right"/>
-        </b-col> -->
-        <!--SECOND WAY -->
+    <b-row align-v="center" class="minSectionHeight">
         <b-col cols="4" id="rhsSection" >
           <div style="position: absolute; bottom: 0; left: 0">
                 <img src="../../assets/phone.png" style="width:32vw; float:left"/>
@@ -74,7 +54,6 @@ p{
   right: 0;
   background-image: url('../../assets/alimo.png');
   background-repeat: no-repeat;
-  /* background-size: 40vw 80vh; */
   height: 100%;
   background-size: cover;
   width: 100%;
@@ -109,6 +88,7 @@ p{
 }
 
 #rhsSection{
-  min-height: 40vh !important;
+  min-height: 50vh !important;
+  padding: 0px;
 }
 </style>

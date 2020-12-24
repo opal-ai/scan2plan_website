@@ -3,7 +3,6 @@
 V1.0    Robert    12/12/2020    Initial Version
 V1.1    Aditi     12/19/2020    Adding Connect Architect functionality
 --->
-
 <template>
   <div id="app">
     <Navbar />
@@ -27,10 +26,8 @@ import Navbar from './components/navbar.vue';
 import Footer from './components/footer.vue';
 import FindArchitect from './components/Architect/findArchitect' //V1.1
 import VueRouter from 'vue-router'
-
 Vue.use(BootstrapVue);
 Vue.use(VueRouter)
-
 export default {
   name: 'app',
   data: function(){
@@ -58,7 +55,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: black;
 }
 
+.minSectionHeight{
+  min-height: 50vh !important;
+}
 </style>

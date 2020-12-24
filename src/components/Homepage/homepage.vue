@@ -8,17 +8,17 @@ V1.1    Aditi     12/19/2020    Toggle interface based on selection
 <template>
   <div class="homepage">
     <b-container fluid>
-      <b-row align-h="center">
+     
         <Introduction />
-      </b-row>
+      
       <div id="grad">
-        <b-row align-h="center" style="min-height:40vh">
+        <b-row align-h="center" class = "minSectionHeight">
           <FloorplanSection />
         </b-row>
-        <b-row align-h="center" style="min-height:40vh">
+        <b-row align-h="center" class = "minSectionHeight">
           <ArchitectSection @showInterface="updateInterface"/> <!--V1.1 change-->
         </b-row>
-        <b-row align-h="center" style="min-height:40vh">
+        <b-row align-h="center" class = "minSectionHeight">
           <ScanSection />
         </b-row>
       </div>
