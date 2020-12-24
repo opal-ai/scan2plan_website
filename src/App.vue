@@ -1,4 +1,3 @@
-<!-- @format -->
 <!--Version History--->
 <!--
 V1.0    Robert    12/12/2020    Initial Version
@@ -27,8 +26,10 @@ import Homepage from './components/Homepage/homepage';
 import Navbar from './components/navbar.vue';
 import Footer from './components/footer.vue';
 import FindArchitect from './components/Architect/findArchitect' //V1.1
+import VueRouter from 'vue-router'
 
 Vue.use(BootstrapVue);
+Vue.use(VueRouter)
 
 export default {
   name: 'app',

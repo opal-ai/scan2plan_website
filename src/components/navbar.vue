@@ -8,7 +8,7 @@ V1.0    Robert    12/12/2020    Initial Version
   <div>
     <b-navbar toggleable="lg" type="light" variant="light">
       <img
-        src="../assets/logo.png"
+        src="../assets/opal_logo.png"
         href="/"
         class="d-inline-block align-top logo"
         alt="scan2plan logo"
