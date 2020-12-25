@@ -10,7 +10,7 @@ V1.0    Robert    12/12/2020    Initial Version
     <b-row align-v="center" class="minSectionHeight">
         <b-col cols="4" id="rhsSection" >
           <div style="position: absolute; bottom: 0; left: 0">
-                <img src="../../assets/phone.png" style="width:32vw; float:left"/>
+                <img src="../../assets/phone.png" id="introImage" />
           </div>
         </b-col>
         <b-col cols="8">
@@ -80,11 +80,16 @@ p{
   color: #044790;
 }
 
-#imageDiv{
-  padding: 0px;
-  position: absolute;
-  right: 0;
-  bottom: 0
+#introImage{
+ width:34vw; 
+ float:left;
+}
+
+@media only screen and (max-width: 600px){
+  #introImage{
+    width:50vw; 
+    float:left;
+}
 }
 
 #rhsSection{

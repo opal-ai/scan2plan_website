@@ -7,10 +7,9 @@ V1.1    Aditi     12/19/2020    Toggle interface based on selection
 
 <template>
   <div class="homepage">
-    <b-container fluid>
         <Introduction />
       <div id="grad">
-        <b-row align-h="center" class = "minSectionHeight">
+        <b-row align-h="center" align-v="center" class = "minSectionHeight">
           <FloorplanSection />
         </b-row>
         <b-row align-h="center" class = "minSectionHeight">
@@ -20,7 +19,6 @@ V1.1    Aditi     12/19/2020    Toggle interface based on selection
           <ScanSection />
         </b-row>
       </div>
-    </b-container>
   </div>
 </template>
 
@@ -48,8 +46,6 @@ export default {
   }
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
   margin: 40px 0 0;
@@ -66,7 +62,7 @@ a {
   color: #42b983;
 }
 #grad {
-  background-image: linear-gradient(white, rgb(209, 220, 240));
+  background-image: linear-gradient(rgb(8 71 144 / 44%), rgb(242 247 253))
 }
 
 
