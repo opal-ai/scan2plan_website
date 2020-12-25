@@ -8,9 +8,7 @@ V1.1    Aditi     12/19/2020    Toggle interface based on selection
 <template>
   <div class="homepage">
     <b-container fluid>
-     
         <Introduction />
-      
       <div id="grad">
         <b-row align-h="center" class = "minSectionHeight">
           <FloorplanSection />

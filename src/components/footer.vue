@@ -6,62 +6,25 @@ V1.1    Aditi     12/23/2020    Fixing the CSS
 --->
 
 <template>
-  <!-- <div id="bottom_navbar"> 
+  <div id="bottom_navbar"> 
    <div class="navbar-item">
-          <h3 style="margin:-0.2vh">ScanTo3D</h3>
-          <p style="font-size:1vw">@OPAL AI Inc 2020</p>
+          <p style="margin:-0.2vh; font-size:1.5rem">ScanTo3D</p>
+          <p style="font-size:0.5rem">@OPAL AI Inc 2020</p>
     </div>
-    <div class="navbar-item">
-        <p class="navbar-item" style="text-align:left">516 N Virgil Avenue<br>Los Angeles<br>California 50004</p>
+    <div>
+        <p class="navbar-item"> <b>OPAL AI Inc</b> <br> </p>
+        <p class="navbar-item" style="font-size: 0.75rem; margin-top:3px"> 516 N Virgil Avenue<br>Los Angeles<br>California 50004</p>
     </div>
-    <div class="navbar-item" style="text-align:left; line-height:30px"> 
+    <div class="navbar-item" style="line-height:30px"> 
       <i class="fas fa-phone-alt "></i> (323) 928-2029 <br>
       <a><i class="fas fa-envelope"></i> info@opaltech.ai</a>
     </div>
-    <div class="navbar-item">
-          <form class="form-inline my-2 my-lg-0 navbar-item">
-            <input
-              class="form-control mr-sm-2"
-              type="email"
-              placeholder="email"
-              aria-label="Email" />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Get download link
-            </button>
-          </form>
-    </div>
-    <div class="navbar-item" style="font-size:2vw">
+    <div class="navbar-item" style="font-size:1.75rem">
             <i style="padding: 5px" class="fab fa-facebook" href="#"></i>
             <i style="padding: 5px" class="fab fa-twitter" href="#"></i>
             <i style="padding: 5px" class="fab fa-instagram" href="#"></i>
     </div>      
-  </div> -->
-  <v-footer
-    color="primary lighten-1"
-    padless
-  >
-    <v-row
-      justify="center"
-      no-gutters
-    >
-      <v-btn
-        v-for="link in links"
-        :key="link"
-        color="white"
-        text
-        rounded
-        class="my-2"
-      >
-        {{ link }}
-      </v-btn>
-      <v-col
-        class="primary lighten-2 py-4 text-center white--text"
-        cols="12"
-      >
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-      </v-col>
-    </v-row>
-  </v-footer>
+  </div>
 </template>
 
 <script>
@@ -78,11 +41,25 @@ export default {
   width: 100%;
   background-color: #044790;
   padding: 1vw;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   align-items: center;
   justify-content: space-between;
 }
 
+.navbar-item{
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px){
+  #bottom_navbar {
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-gap: 2vh;
+  }
+
+  .navbar-item{
+     text-align: center;
+  }
+}
 </style>
