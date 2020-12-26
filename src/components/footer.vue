@@ -19,10 +19,10 @@ V1.1    Aditi     12/23/2020    Fixing the CSS
       <i class="fas fa-phone-alt "></i> (323) 928-2029 <br>
       <a><i class="fas fa-envelope"></i> info@opaltech.ai</a>
     </div>
-    <div class="navbar-item" style="font-size:1.75rem">
-            <i style="padding: 5px" class="fab fa-facebook" href="#"></i>
-            <i style="padding: 5px" class="fab fa-twitter" href="#"></i>
-            <i style="padding: 5px" class="fab fa-instagram" href="#"></i>
+    <div class="navbar-item" style="font-size:2rem">
+            <a :href="{linkedIn}"><i style="padding: 5px; color: white" class="fab fa-linkedin"></i></a>
+            <a :href="{twitter}"> <i style="padding: 5px; color: white" class="fab fa-twitter"></i></a>
+            <a :href="instagram"> <i style="padding: 5px; color: white" class="fab fa-instagram"></i></a>
     </div>      
   </div>
 </template>
@@ -31,6 +31,13 @@ V1.1    Aditi     12/23/2020    Fixing the CSS
 export default {
   name: 'Footer',
   components: {},
+  data: function (){
+    return {
+      twitter: 'https://twitter.com/OPALAI3',
+      linkedIn: 'https://www.instagram.com/opalai2/',
+      instagram: 'https://www.instagram.com/opalai2/'
+    }
+  }
 };
 </script>
 

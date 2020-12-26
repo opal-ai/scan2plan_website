@@ -43,7 +43,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 
 #floorplan{
   width:100%
@@ -63,7 +63,6 @@ export default {
   background-color: #044790;
   padding: 7px;
   border-radius: 10px;
-  font-size: 0.75rem;
   color:white;
   width: 50%;
   font-size: 1.2rem;

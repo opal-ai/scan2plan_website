@@ -82,6 +82,7 @@ export default {
 
   #architectImage{
     border-radius: 20px;
-    box-shadow: #808080 5px 5px 10px
+    box-shadow: #808080 5px 5px 10px;
+    max-width: 80%;
   }
 </style>
