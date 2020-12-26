@@ -9,7 +9,7 @@ V1.0    Robert    12/12/2020    Initial Version
     <b-container>
       <b-row align-v="center">
         <b-col>
-          <b-img fluid-grow :src="require('../../assets/devices.png')" id="devicesImage"></b-img>
+          <b-img fluid-grow :src="require('../../assets/devices_.png')" id="devicesImage"></b-img>
         </b-col>
         <b-col cols="auto">
           <p style="margin-top:7vh; font-size:2.5rem; font-weight:bolder; padding:10px">GET A FLOORPLAN</p>
@@ -55,9 +55,9 @@ export default {
   line-height: 30px;
 }
 
-#devicesImage{
+/* #devicesImage{
   max-width: 80%;
-}
+} */
 
 #downloadButton{
   background-color: #044790;
