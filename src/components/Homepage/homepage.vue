@@ -1,23 +1,24 @@
 <!-- @format -->
+<!--Version History--->
+<!--
+V1.0    Robert    12/12/2020    Initial Version
+V1.1    Aditi     12/19/2020    Toggle interface based on selection
+--->
 
 <template>
   <div class="homepage">
-    <b-container fluid>
-      <b-row align-h="center">
         <Introduction />
-      </b-row>
       <div id="grad">
-        <b-row align-h="center">
+        <b-row align-h="center" align-v="center" class = "minSectionHeight">
           <FloorplanSection />
         </b-row>
-        <b-row align-h="center">
-          <ArchitectSection @showArchitechtInterface="updateVarForArchitecht"/>
+        <b-row align-h="center"  align-v="center" class = "minSectionHeight">
+          <ArchitectSection @showInterface="updateInterface"/> <!--V1.1 change-->
         </b-row>
-        <b-row align-h="center">
+        <b-row align-h="center" align-v="center" class = "minSectionHeight">
           <ScanSection />
         </b-row>
       </div>
-    </b-container>
   </div>
 </template>
 
@@ -32,20 +33,19 @@ export default {
   name: 'Homepage',
   data: function() {
     return {
-      showArchitectInterface: false
+      showInterface: ""
     }
   },
   props: {},
+  //V1.1
   methods: {
-    updateVarForArchitecht : function(){
-      this.showArchitectInterface = true;
-      console.log("data passed to homepage")
+    updateInterface : function(value){
+      this.showInterface = value;
+      this.$emit("showInterface", this.showInterface)
     }
   }
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
   margin: 40px 0 0;
@@ -62,6 +62,8 @@ a {
   color: #42b983;
 }
 #grad {
-  background-image: linear-gradient(white, rgb(209, 220, 240));
+  background-image: linear-gradient(rgb(8 71 144 / 44%), rgb(242 247 253))
 }
+
+
 </style>

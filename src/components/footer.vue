@@ -1,68 +1,29 @@
 <!-- @format -->
+<!--Version History--->
+<!--
+V1.0    Robert    12/12/2020    Initial Version
+V1.1    Aditi     12/23/2020    Fixing the CSS
+--->
 
 <template>
-  <div id="bottom_navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-      <a class="navbar-brand" href="#">
-        <h4 style="margin:-0.2vh">SCAN2PLAN</h4>
-        <p>@OPAL AI Inc 2020</p>
-      </a>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <i class="fas fa-search-location"
-              ><p>516 N Virgil Avenue</p>
-              <p>Los Angeles</p>
-              <p>California 90004</p>
-            </i>
-          </li>
-          <b-container>
-            <li class="nav-item">
-              <b-row>
-                <i class="fas fa-envelope-square"
-                  ><a class="nav-link" href="#">info@opaltech.ai</a></i
-                >
-              </b-row>
-              <b-row>
-                <i class="fas fa-phone"
-                  ><a class="nav-link disabled" href="#">(323) 928-2029</a></i
-                >
-              </b-row>
-            </li>
-          </b-container>
-        </ul>
-
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="email"
-            placeholder="email"
-            aria-label="Email"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Get download link
-          </button>
-        </form>
-        <!-- add fontawesome ican for facebook, twitter, and instagram -->
-        <i class="fab fa-facebook" href="#"></i>
-        <i class="fab fa-twitter" href="#"></i>
-        <i class="fab fa-instagram" href="#"></i>
-      </div>
-    </nav>
-    <!-- <router-view/> -->
+  <div id="bottom_navbar"> 
+   <div class="navbar-item">
+          <p style="margin:-0.2vh; font-size:1.5rem">ScanTo3D</p>
+          <p style="font-size:0.5rem">@OPAL AI Inc 2020</p>
+    </div>
+    <div>
+        <p class="navbar-item"> <b>OPAL AI Inc</b> <br> </p>
+        <p class="navbar-item" style="font-size: 0.75rem; margin-top:3px"> 516 N Virgil Avenue<br>Los Angeles<br>California 50004</p>
+    </div>
+    <div class="navbar-item" style="line-height:30px"> 
+      <i class="fas fa-phone-alt "></i> (323) 928-2029 <br>
+      <a><i class="fas fa-envelope"></i> info@opaltech.ai</a>
+    </div>
+    <div class="navbar-item" style="font-size:2rem">
+            <a :href="{linkedIn}"><i style="padding: 5px; color: white" class="fab fa-linkedin"></i></a>
+            <a :href="{twitter}"> <i style="padding: 5px; color: white" class="fab fa-twitter"></i></a>
+            <a :href="instagram"> <i style="padding: 5px; color: white" class="fab fa-instagram"></i></a>
+    </div>      
   </div>
 </template>
 
@@ -70,11 +31,42 @@
 export default {
   name: 'Footer',
   components: {},
+  data: function (){
+    return {
+      twitter: 'https://twitter.com/OPALAI3',
+      linkedIn: 'https://www.instagram.com/opalai2/',
+      instagram: 'https://www.instagram.com/opalai2/'
+    }
+  }
 };
 </script>
 
 <style>
 #bottom_navbar {
-  color: black !important;
+  color: white !important;
+  position: relative;
+  width: 100%;
+  background-color: #044790;
+  padding: 1vw;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-item{
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px){
+  #bottom_navbar {
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-gap: 2vh;
+  }
+
+  .navbar-item{
+     text-align: center;
+  }
 }
 </style>
