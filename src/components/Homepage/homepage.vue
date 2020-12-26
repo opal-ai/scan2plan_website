@@ -12,10 +12,10 @@ V1.1    Aditi     12/19/2020    Toggle interface based on selection
         <b-row align-h="center" align-v="center" class = "minSectionHeight">
           <FloorplanSection />
         </b-row>
-        <b-row align-h="center" class = "minSectionHeight">
+        <b-row align-h="center"  align-v="center" class = "minSectionHeight">
           <ArchitectSection @showInterface="updateInterface"/> <!--V1.1 change-->
         </b-row>
-        <b-row align-h="center" class = "minSectionHeight">
+        <b-row align-h="center" align-v="center" class = "minSectionHeight">
           <ScanSection />
         </b-row>
       </div>

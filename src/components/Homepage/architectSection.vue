@@ -8,13 +8,13 @@ V1.1    Aditi     12/19/2020    Added Modal for login on button click
 <template>
   <div id="architect">
     <b-container>
-      <b-row>
+      <b-row align-v="center">
         <b-col cols="auto">
-          <h1 style="margin-top:7vh">FIND AN ARCHITECT</h1>
-          <h4>Scan2plan helps you find the right architect in seconds</h4>
+          <p style="margin-top:7vh; font-size:2.5rem; font-weight:bolder">FIND AN ARCHITECT</p>
+          <p style="font-size:1.5rem; margin-top:2vh">ScanTo3D will help you find the right architect in seconds</p>
           <button
             type="button"
-            class="btn btn-primary"
+            id="architectButton"
             href="#"
             style="margin-bottom:5vh"
             v-b-modal.loginSignupModal
@@ -23,13 +23,17 @@ V1.1    Aditi     12/19/2020    Added Modal for login on button click
           </button>
           <!--V1.1 changes start-->
               <b-modal id="loginSignupModal">
-                <button class="modalButton" v-on:click="showArchitectLogin">Find an Architect</button>
-                <button class="modalButton">Find a project</button>
+                <!-- <button class="modalButton" v-on:click="showArchitectLogin">Find an Architect</button>
+                <button class="modalButton">Find a project</button> -->
+                <h3>Coming soon!</h3>
+                <p>Architect Connect will allow you to connect with several architects via our platform. You will be able to see their past projects, ratings etc and chat with them before hiring. 
+                  <br> So now you don't have to look all over the internet for a suitable architect. Just browse through our highly skilled partners.
+                </p>
               </b-modal>
           <!--V1.1 changes start-->
         </b-col>
         <b-col>
-          <img src="../../assets/girl.png" width="300vw" height="200vw" />
+           <b-img fluid-grow :src="require('../../assets/girl.png')" id="architectImage"></b-img>
         </b-col>
       </b-row>
     </b-container>
@@ -59,5 +63,25 @@ export default {
 <style scoped>
   .modalButton {
     width: 100% 
+  }
+
+  #architect{
+      width:100%
+  }
+
+  #architectButton{
+    background-color: #044790;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    color:white;
+    width: 50%;
+    font-size: 1.2rem;
+    margin-top: 1vh
+  }
+
+  #architectImage{
+    border-radius: 20px;
+    box-shadow: #808080 5px 5px 10px
   }
 </style>
