@@ -2,5 +2,5 @@ module.exports = {
   "transpileDependencies": [
     "vuetify"
   ],
-  publicPath: '/scan2plan_website/'
+  publicPath: '/scanto3d/'
 }
