@@ -1,4 +1,4 @@
-# scan2plan
+# scanTo3d
 
 ## Project setup
 ```
